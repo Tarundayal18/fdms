@@ -1,0 +1,126 @@
+// "use client"
+
+// export default function HeroSection() {
+//   return (
+//     <section className="relative w-full bg-[#FFF8E7] py-12 md:py-12 overflow-hidden">
+//       {/* Heading Section */}
+//       <div className="container mx-auto px-4 text-center mb-12 md:mb-16">
+//         {/* AGENIUS Title with Badges */}
+//         <div className="relative inline-block">
+//         <h1 className="font-oswald text-7xl md:text-9xl lg:text-[16rem] font-weight: 550 text-[#3D1A1F] tracking-tight leading-[1.1] ">
+//         AGENIUS
+//           </h1>
+
+//           {/* Decorative Badges */}
+//           <div className="absolute -left-8 md:-left-16 top-4 md:top-8 bg-[#C8E6C9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[-8deg] shadow-md">
+//             Timeless
+//           </div>
+//           <div className="absolute left-1/2 -translate-x-1/2 -top-4 md:-top-6 bg-[#F8BBD0] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[5deg] shadow-md">
+//             Creative
+//           </div>
+//           <div className="absolute -right-8 md:-right-16 top-4 md:top-8 bg-[#D1C4E9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[8deg] shadow-md">
+//             Edgy
+//           </div>
+//         </div>
+
+//         {/* Subheading */}
+//         <h2 className="font-oswald text-2xl md:text-4xl lg:text-5xl font-bold text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
+//           Your brand deserves to be
+//           <br />
+//           Seen, Heard, and Remembered
+//         </h2>
+
+//         {/* CTA Button */}
+//         <button className="bg-[#FFE878] hover:bg-[#ffed4e]   text-lg md:text-xl font-bold px-8 md:px-12 py-3 md:py-4 rounded-fullbg-[#FFE878] hover:bg-[#ffed4e] text-[#3b001b] font-oswald font-bold text-base py-3 rounded-full border-b-4 border-[#3b001b] shadow-md transition-all duration-200 active:translate-y-1 active:shadow-sm">
+//           Get Template
+//         </button>
+//       </div>
+
+        
+//       <div className="relative w-full max-w-7xl mx-auto px-4 py-8 md:py-12">
+//         <div className="relative w-full flex items-center justify-center min-h-[400px] md:min-h-[600px]">
+//           {/* Concentric Circles Background */}
+          
+
+         
+//         </div>
+//       </div>
+
+//     </section>
+//   )
+// }
+
+
+"use client"
+
+export default function HeroSection() {
+  return (
+    <section className="relative w-full bg-[#FFF8E7] py-12 md:py-12 overflow-hidden">
+      {/* Heading Section */}
+      <div className="container mx-auto px-4 text-center mb-12 md:mb-16">
+        {/* AGENIUS Title with Badges */}
+        <div className="relative inline-block">
+          <h1 className="font-oswald text-7xl md:text-9xl lg:text-[16rem] font-[550] text-[#3D1A1F] tracking-tight leading-[1.1]">
+            AGENIUS
+          </h1>
+
+          {/* Decorative Badges */}
+          <div className="absolute -left-8 md:-left-16 top-4 md:top-8 bg-[#C8E6C9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[-8deg] shadow-md">
+            Timeless
+          </div>
+          <div className="absolute left-1/2 -translate-x-1/2 -top-4 md:-top-6 bg-[#F8BBD0] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[5deg] shadow-md">
+            Creative
+          </div>
+          <div className="absolute -right-8 md:-right-16 top-4 md:top-8 bg-[#D1C4E9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[8deg] shadow-md">
+            Edgy
+          </div>
+        </div>
+
+        {/* Subheading */}
+        <h2 className="font-oswald text-2xl md:text-4xl lg:text-5xl font-bold text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
+          Your brand deserves to be
+          <br />
+          Seen, Heard, and Remembered
+        </h2>
+
+        {/* CTA Button */}
+        <button className="bg-[#FFE878] hover:bg-[#ffed4e] text-lg md:text-xl font-bold px-8 md:px-12 py-3 md:py-4 text-[#3b001b] font-oswald rounded-full border-b-4 border-[#3b001b] shadow-md transition-all duration-200 active:translate-y-1 active:shadow-sm">
+          Get Template
+        </button>
+      </div>
+
+      {/* Full-width Background Image */}
+      <div className="relative w-full flex items-center justify-center mt-8 md:mt-16">
+        {/* Background image */}
+        <img
+          src="/main.png"
+          alt="Background"
+          className="w-full object-cover"
+          style={{
+            height: "28rem",
+          }}
+        />
+
+        {/* Top Fade Effect */}
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#FFF8E7] to-transparent pointer-events-none z-10" />
+
+        {/* Center Circle Video */}
+        <div className="absolute inset-0 flex items-center justify-center z-20">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[22rem] md:h-[22rem] lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm">
+            <video
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/bussiness.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
