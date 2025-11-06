@@ -60,11 +60,21 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 text-center mb-12 md:mb-16 mt-18 sm:mt-10 md:mt-14">
         {/* AGENIUS Title with Badges */}
         <div className="relative inline-block">
+<<<<<<< HEAD
           <div className="flex justify-center">
             <h1 className="font-oswald text-[120px] md:text-[140px] lg:text-[220px] font-bold text-[#3e1827] leading-none tracking-tighter" style={{ textShadow: '4px 4px 0px #fbe941' }}>
               FdMS
             </h1>
           </div>
+=======
+        <div className="flex justify-center">
+  <img
+    src="/Heading 1.png"
+    alt="FdMS"
+    className="w-[200px] md:w-[200px] lg:w-[400px] object-contain"
+  />
+</div>
+>>>>>>> 8e97b5b96634ae10db19c5091a5166a684ed94b1
 
 
           {/* Decorative Badges */}
