@@ -15,6 +15,7 @@ import HeroSection from "@/components/hero-section"
 import FeaturesSection from "@/components/features-section"
 import ProjectsGridSection from "@/components/projects-grid-section"
 import FounderNoteSection from "@/components/founder-note-section"
+import MinimumProjectsGrid from "@/components/minimum-project-grid"
 
 export default function Home() {
   return (
@@ -25,13 +26,11 @@ export default function Home() {
       <AnimatedIconsSection />
       <ServicesSection />
       <WhyBestSection />
-      <ProjectsGridSection />
-      {/* <PortfolioSection /> */}
+      {/* <ProjectsGridSection /> */}
+      <MinimumProjectsGrid />
       <StepsSection />
       <ComparisonSection />
       <Tesiminiols />
-      {/* <PricingSection /> */}
-      {/* <AboutSection /> */}
       <FounderNoteSection />
       <FaqSection />
       <ContactSection />

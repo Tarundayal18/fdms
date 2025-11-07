@@ -1,6 +1,10 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
+import MinimumProjectsGrid from "@/components/minimum-project-grid";
 import Navbar from "@/components/navbar";
 import ProjectsGridSection from "@/components/projects-grid-section";
 import ServicesSection from "@/components/services-section";
@@ -8,6 +12,9 @@ import StepsSection from "@/components/steps-section";
 import Tesiminiols from "@/components/testiminiols";
 
 export default function BrandingIdentityPage() {
+
+  const router = useRouter();
+
   const cards = [
     {
       id: 1,
@@ -50,6 +57,12 @@ export default function BrandingIdentityPage() {
       image: "/Link (4).png",
     },
   ];
+
+  const handleCardClick = (id: number) => {
+    router.push(`/services/mainServices`);
+  };
+  
+
 
   return (
     <main className="min-h-screen bg-[#fefce8]">
@@ -117,6 +130,7 @@ export default function BrandingIdentityPage() {
           {cards.map((card) => (
             <div
               key={card.id}
+              onClick={() => handleCardClick(card.id)}
               className="relative w-full rounded-[2rem] overflow-hidden duration-300"
             >
               <img
@@ -128,7 +142,10 @@ export default function BrandingIdentityPage() {
                 <h2 className="text-4xl font-bold font-oswald">{card.title}</h2>
                 <p className="mt-2 text-[1.205rem] font-oswald">{card.text}</p>
               </div>
-              <button className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
+              <button onClick={(e) => {
+                  e.stopPropagation(); // prevent triggering card click twice
+                  handleCardClick(card.id);
+                }} className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
                 <span className="text-xl">→</span>
               </button>
             </div>
@@ -136,7 +153,7 @@ export default function BrandingIdentityPage() {
         </div>
       </section>
 
-     <ProjectsGridSection />
+      <MinimumProjectsGrid />
       <StepsSection />
       <Tesiminiols />
       <FaqSection />

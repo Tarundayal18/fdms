@@ -1,6 +1,7 @@
 import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
+import MinimumProjectsGrid from "@/components/minimum-project-grid";
 import Navbar from "@/components/navbar";
 import ProjectsGridSection from "@/components/projects-grid-section";
 import ServicesSection from "@/components/services-section";
@@ -11,43 +12,30 @@ export default function Socialmedia() {
   const cards = [
     {
       id: 1,
-      title: "LOGO MAGIC",
-      text: "We create memorable logos and identity kits that visually define your brand's purpose and personality.",
+      title: "Post Packs",
+      text: "Monthly or quarterly bundled social media solutions that make your brand stay consistent, engaging, and relevant.",
       image: "/Link02.png",
     },
     {
       id: 2,
-      title: "Pack Attack",
-      text: "We design packaging and brand collaterals that make your product irresistible — on shelves or screens.",
+      title: "Pay & Play",
+      text: "A flexible social media service billed only on per-post usage with monthly reports.",
 
       image: "/Link (1).png",
     },
     {
       id: 3,
-      title: "Collateral Crush",
-      text: "We design brochures, presentations, flyers, and digital decks that turn your brand narrative into conversion power.",
+      title: "CXO Glow",
+      text: "We discreetly manage and grow LinkedIn profiles for CXOs, founders, and busy professionals.",
 
       image: "/Link (6).png",
     },
     {
       id: 4,
-      title: "Identity Kit",
-      text: "We create brand identity kits with everything from notepads to ID cards — where every detail speaks your brand language.",
+      title: "Buzz Builder",
+      text: "We create custom social campaigns designed to meet specific objectives within realistic budgets.",
 
       image: "/Link.png",
-    },
-    {
-      id: 5,
-      title: "Branding As A Service",
-      text: "Monthly subscription-based branding support that adapts to your needs, billed only for usage.",
-
-      image: "/Link (3).png",
-    },
-    {
-      id: 6,
-      title: "Brand Makeover",
-      text: "We transform existing brands with complete identity revamps — fresh, relevant, and future-ready.",
-      image: "/Link (4).png",
     },
   ];
 
@@ -136,7 +124,7 @@ export default function Socialmedia() {
         </div>
       </section>
 
-     <ProjectsGridSection />
+      <MinimumProjectsGrid />
       <StepsSection />
       <Tesiminiols />
       <FaqSection />

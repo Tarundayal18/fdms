@@ -1,6 +1,7 @@
 import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
+import MinimumProjectsGrid from "@/components/minimum-project-grid";
 import Navbar from "@/components/navbar";
 import ProjectsGridSection from "@/components/projects-grid-section";
 import ServicesSection from "@/components/services-section";
@@ -11,44 +12,31 @@ export default function Performancemarket() {
   const cards = [
     {
       id: 1,
-      title: "LOGO MAGIC",
-      text: "We create memorable logos and identity kits that visually define your brand's purpose and personality.",
+      title: "Search Surge",
+      text: "We plan, create, and optimize search ad campaigns that drive real ROI.",
       image: "/Link02.png",
     },
     {
       id: 2,
-      title: "Pack Attack",
-      text: "We design packaging and brand collaterals that make your product irresistible — on shelves or screens.",
+      title: "Social Spark",
+      text: "We craft paid social campaigns that build awareness, engagement, and conversions.",
 
       image: "/Link (1).png",
     },
     {
       id: 3,
-      title: "Collateral Crush",
-      text: "We design brochures, presentations, flyers, and digital decks that turn your brand narrative into conversion power.",
+      title: "Data Drill",
+      text: "We integrate multi-channel analytics for 360° marketing insights and smarter business decisions.",
 
       image: "/Link (6).png",
     },
     {
       id: 4,
-      title: "Identity Kit",
-      text: "We create brand identity kits with everything from notepads to ID cards — where every detail speaks your brand language.",
+      title: "Growth Grind",
+      text: "We create custom goal-based marketing plans that deliver measurable growth.",
 
       image: "/Link.png",
-    },
-    {
-      id: 5,
-      title: "Branding As A Service",
-      text: "Monthly subscription-based branding support that adapts to your needs, billed only for usage.",
-
-      image: "/Link (3).png",
-    },
-    {
-      id: 6,
-      title: "Brand Makeover",
-      text: "We transform existing brands with complete identity revamps — fresh, relevant, and future-ready.",
-      image: "/Link (4).png",
-    },
+    }
   ];
 
   return (
@@ -136,7 +124,7 @@ export default function Performancemarket() {
         </div>
       </section>
 
-     <ProjectsGridSection />
+      <MinimumProjectsGrid />
       <StepsSection />
       <Tesiminiols />
       <FaqSection />

@@ -110,16 +110,17 @@ export default function FooterSection() {
       <div className="max-w-[1450px] mx-auto">
         <footer className="bg-[#2b0f1b] text-white rounded-3xl px-12 py-6 relative overflow-hidden">
           {/* Large Background Text */}
-          <div className="absolute inset-0 flex items-end justify-center pointer-events-none">
-            <h2
-              className="font-black font-oswald text-[320px] leading-none opacity-[0.07] select-none"
-              style={{
-                color: 'rgba(255, 255, 255, 0.49)',
-              }}
-            >
-              FdMS
-            </h2>
-          </div>
+         <div className="absolute inset-0 flex items-end justify-center pointer-events-none">
+  <h2
+    className="font-black font-oswald text-[320px] leading-none opacity-[0.07] select-none tracking-[-0.07em]"
+    style={{
+      color: 'rgba(255, 255, 255, 0.49)',
+    }}
+  >
+    FdMS
+  </h2>
+</div>
+
 
           {/* Main Content */}
           <div className="relative z-10">
@@ -132,8 +133,8 @@ export default function FooterSection() {
                   <Image
                     src="/mainlogo.png"
                     alt="FdMS Logo"
-                    width={160}
-                    height={80}
+                    width={140}
+                    height={70}
                     className="object-contain"
                   />
                 </div>
