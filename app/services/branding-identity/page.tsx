@@ -58,10 +58,10 @@ export default function BrandingIdentityPage() {
     },
   ];
 
-  const handleCardClick = (id: number) => {
-    router.push(`/services/mainServices`);
-  };
-  
+const handleCardClick = (id: number) => { 
+  router.push(`/services/mainServices?id=${id}`);
+};
+
 
 
   return (

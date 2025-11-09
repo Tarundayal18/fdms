@@ -1,3 +1,5 @@
+'use client'
+
 import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
@@ -7,37 +9,47 @@ import ProjectsGridSection from "@/components/projects-grid-section";
 import ServicesSection from "@/components/services-section";
 import StepsSection from "@/components/steps-section";
 import Tesiminiols from "@/components/testiminiols";
+import { useRouter } from "next/navigation";
 
 export default function Socialmedia() {
+
+
+  const router = useRouter();
+
   const cards = [
     {
-      id: 1,
+      id: 7,
       title: "Post Packs",
       text: "Monthly or quarterly bundled social media solutions that make your brand stay consistent, engaging, and relevant.",
       image: "/Link02.png",
     },
     {
-      id: 2,
+      id: 8,
       title: "Pay & Play",
       text: "A flexible social media service billed only on per-post usage with monthly reports.",
 
       image: "/Link (1).png",
     },
     {
-      id: 3,
+      id: 9,
       title: "CXO Glow",
       text: "We discreetly manage and grow LinkedIn profiles for CXOs, founders, and busy professionals.",
 
       image: "/Link (6).png",
     },
     {
-      id: 4,
+      id: 10,
       title: "Buzz Builder",
       text: "We create custom social campaigns designed to meet specific objectives within realistic budgets.",
 
       image: "/Link.png",
     },
   ];
+
+
+  const handleCardClick = (id: number) => {
+    router.push(`/services/mainServices?id=${id}`);
+  };
 
   return (
     <main className="min-h-screen bg-[#fefce8]">
@@ -51,10 +63,10 @@ export default function Socialmedia() {
             OUR SERVICES!
           </p>
           <h1 className="font-oswald text-4xl sm:text-5xl lg:text-7xl font-bold text-[#2b0012] mb-4">
-          Social Media
+            Social Media
           </h1>
           <p className="font-oswald text-xl text-[#2b0012]">
-          Creative content and strategies that stop the scroll.
+            Creative content and strategies that stop the scroll.
           </p>
         </div>
 
@@ -105,6 +117,8 @@ export default function Socialmedia() {
           {cards.map((card) => (
             <div
               key={card.id}
+              onClick={() => handleCardClick(card.id)}
+
               className="relative w-full rounded-[2rem] overflow-hidden duration-300"
             >
               <img
@@ -116,7 +130,10 @@ export default function Socialmedia() {
                 <h2 className="text-4xl font-bold font-oswald">{card.title}</h2>
                 <p className="mt-2 text-[1.205rem] font-oswald">{card.text}</p>
               </div>
-              <button className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
+              <button onClick={(e) => {
+                e.stopPropagation(); // prevent triggering card click twice
+                handleCardClick(card.id);
+              }} className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
                 <span className="text-xl">→</span>
               </button>
             </div>

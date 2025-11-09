@@ -51,7 +51,7 @@ export default function AnimatedIconsSection() {
 
         {/* Animated Floating Icons */}
         <div className="mb-16 md:mb-20 lg:mb-24 min-h-36 md:min-h-44 lg:min-h-52 flex items-center overflow-hidden">
-  <div className="flex animate-snake-scroll gap-6 md:gap-8 lg:gap-10">
+  <div className="flex animate-snake-scroll gap-6 md:gap-8 lg:gap-10 mt-8">
     {[...Array(3)].map((_, repeatIndex) =>
       icons.map((icon, index) => (
         <div

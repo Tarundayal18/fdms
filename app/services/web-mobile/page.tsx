@@ -1,3 +1,5 @@
+'use client'
+
 import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
@@ -7,38 +9,47 @@ import ProjectsGridSection from "@/components/projects-grid-section";
 import ServicesSection from "@/components/services-section";
 import StepsSection from "@/components/steps-section";
 import Tesiminiols from "@/components/testiminiols";
+import { useRouter } from "next/navigation";
 
 export default function WebApp() {
+
+  const router = useRouter();
+
   const cards = [
     {
-      id: 1,
+      id: 11,
       title: "Code Craft",
       text: "We design and build websites from scratch — fast, secure, and uniquely yours.",
       image: "/Link02.png",
     },
     {
-      id: 2,
+      id: 12,
       title: "Plug & Play",
       text: "We develop dynamic websites on platforms like WordPress, Shopify, and Wix for quick, cost-efficient launches.",
 
       image: "/Link (1).png",
     },
     {
-      id: 3,
+      id: 13,
       title: "Shop Stop",
       text: "A 12-month subscription plan that covers your website, hosting, and ongoing marketing.",
 
       image: "/Link (6).png",
     },
     {
-      id: 4,
+      id: 14,
       title: "App Attack",
       text: "We design and develop mobile apps for Android and iOS — built to grow your digital reach.",
 
       image: "/Link.png",
     },
-    
+
   ];
+
+  const handleCardClick = (id: number) => {
+    router.push(`/services/mainServices?id=${id}`);
+  };
+
 
   return (
     <main className="min-h-screen bg-[#fefce8]">
@@ -52,10 +63,10 @@ export default function WebApp() {
             OUR SERVICES!
           </p>
           <h1 className="font-oswald text-4xl sm:text-5xl lg:text-7xl font-bold text-[#2b0012] mb-4">
-          Websites & Mobile Apps
+            Websites & Mobile Apps
           </h1>
           <p className="font-oswald text-xl text-[#2b0012]">
-          Pretty and powerful digital experiences that work.
+            Pretty and powerful digital experiences that work.
           </p>
         </div>
 
@@ -106,6 +117,8 @@ export default function WebApp() {
           {cards.map((card) => (
             <div
               key={card.id}
+              onClick={() => handleCardClick(card.id)}
+
               className="relative w-full rounded-[2rem] overflow-hidden duration-300"
             >
               <img
@@ -117,7 +130,10 @@ export default function WebApp() {
                 <h2 className="text-4xl font-bold font-oswald">{card.title}</h2>
                 <p className="mt-2 text-[1.205rem] font-oswald">{card.text}</p>
               </div>
-              <button className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
+              <button onClick={(e) => {
+                e.stopPropagation(); // prevent triggering card click twice
+                handleCardClick(card.id);
+              }} className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
                 <span className="text-xl">→</span>
               </button>
             </div>

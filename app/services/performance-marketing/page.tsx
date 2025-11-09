@@ -1,3 +1,6 @@
+'use client'
+
+
 import ContactSection from "@/components/contact-section";
 import FaqSection from "@/components/faq-section";
 import FooterSection from "@/components/footer-section";
@@ -8,36 +11,45 @@ import ServicesSection from "@/components/services-section";
 import StepsSection from "@/components/steps-section";
 import Tesiminiols from "@/components/testiminiols";
 
+import { useRouter } from "next/navigation";
+
 export default function Performancemarket() {
+
+  const router = useRouter();
+
   const cards = [
     {
-      id: 1,
+      id: 15,
       title: "Search Surge",
       text: "We plan, create, and optimize search ad campaigns that drive real ROI.",
       image: "/Link02.png",
     },
     {
-      id: 2,
+      id: 16,
       title: "Social Spark",
       text: "We craft paid social campaigns that build awareness, engagement, and conversions.",
 
       image: "/Link (1).png",
     },
     {
-      id: 3,
+      id: 17,
       title: "Data Drill",
       text: "We integrate multi-channel analytics for 360° marketing insights and smarter business decisions.",
 
       image: "/Link (6).png",
     },
     {
-      id: 4,
+      id: 18,
       title: "Growth Grind",
       text: "We create custom goal-based marketing plans that deliver measurable growth.",
 
       image: "/Link.png",
     }
   ];
+
+  const handleCardClick = (id: number) => {
+    router.push(`/services/mainServices?id=${id}`);
+  };
 
   return (
     <main className="min-h-screen bg-[#fefce8]">
@@ -51,10 +63,10 @@ export default function Performancemarket() {
             OUR SERVICES!
           </p>
           <h1 className="font-oswald text-4xl sm:text-5xl lg:text-7xl font-bold text-[#2b0012] mb-4">
-          Performance Marketing
+            Performance Marketing
           </h1>
           <p className="font-oswald text-xl text-[#2b0012]">
-          Data-driven campaigns that deliver real results.
+            Data-driven campaigns that deliver real results.
           </p>
         </div>
 
@@ -105,6 +117,8 @@ export default function Performancemarket() {
           {cards.map((card) => (
             <div
               key={card.id}
+              onClick={() => handleCardClick(card.id)}
+
               className="relative w-full rounded-[2rem] overflow-hidden duration-300"
             >
               <img
@@ -116,7 +130,10 @@ export default function Performancemarket() {
                 <h2 className="text-4xl font-bold font-oswald">{card.title}</h2>
                 <p className="mt-2 text-[1.205rem] font-oswald">{card.text}</p>
               </div>
-              <button className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
+              <button onClick={(e) => {
+                e.stopPropagation(); // prevent triggering card click twice
+                handleCardClick(card.id);
+              }} className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
                 <span className="text-xl">→</span>
               </button>
             </div>

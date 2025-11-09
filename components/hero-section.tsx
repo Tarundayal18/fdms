@@ -1,83 +1,269 @@
+// "use client"
+
+// export default function HeroSection() {
+//   return (
+//     <section className="relative w-full bg-[#FFF8E7] py-12 md:py-12 overflow-hidden">
+//       {/* Heading Section */}
+//       <div className="container mx-auto px-4 text-center mb-12 md:mb-16 mt-18 sm:mt-10 md:mt-14">
+//         {/* AGENIUS Title with Badges */}
+//         <div className="relative inline-block">
+//           <div className="flex justify-center">
+//             <h1 className="font-oswald text-[120px] md:text-[140px] lg:text-[220px] font-bold text-[#3e1827] leading-none tracking-tighter" style={{ textShadow: '4px 4px 0px #fbe941' }}>
+//               FdMS
+//             </h1>
+//           </div>
+
+//           {/* Decorative Badges */}
+//           <div className="absolute -left-8 md:-left-16 top-4 md:top-8 bg-[#C8E6C9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[-8deg] shadow-md">
+//             Timeless
+//           </div>
+//           <div className="absolute left-1/2 -translate-x-1/2 -top-4 md:-top-6 bg-[#F8BBD0] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[5deg] shadow-md">
+//             Creative
+//           </div>
+//           <div className="absolute -right-8 md:-right-16 top-4 md:top-8 bg-[#D1C4E9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[8deg] shadow-md">
+//             Edgy
+//           </div>
+//         </div>
+
+//         <h2 className="font-oswald text-1xl md:text-1xl lg:text-2xl font-medium text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
+//           A Creative Agency by:
+
+//           <br />
+//           SAUHITYAA
+
+//         </h2>
+
+//         {/* Subheading */}
+//         <h2 className="font-oswald text-2xl md:text-3xl lg:text-4xl font-semibold text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
+//           Designed to be seen.
+
+//           <br />
+//           Built to be remembered.
+//         </h2>
+
+//         {/* CTA Button */}
+//         <button className="bg-[#FFE878] hover:bg-[#ffed4e] text-lg md:text-xl font-bold px-8 md:px-7 py-3 md:py-3 text-[#3b001b] font-oswald rounded-full border-b-4 border-[#3b001b] shadow-md transition-all duration-200 active:translate-y-1 active:shadow-sm">
+//           Book a Call
+//         </button>
+//       </div>
+
+//       {/* Full-width Background Image */}
+//       <div className="relative w-full flex items-center justify-center mt-8 md:mt-16">
+//         {/* Background with radial gradient design */}
+//         <div
+//           className="w-full h-[20rem] lg:h-[40rem] md:h-[30rem] sm:h-[20rem] xs:h-[22rem]"
+//           style={{
+//             backgroundImage: 'radial-gradient(circle at center center, #F6C2F4 0%, #FAFABF 100%), repeating-radial-gradient(circle at center center, rgb(240, 151, 197), rgb(240, 151, 197), 19px, transparent 38px, transparent 19px)',
+//             backgroundBlendMode: 'multiply'
+//           }}
+//         />
+
+//         {/* Top Fade Effect */}
+//         <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#FFF8E7] to-transparent pointer-events-none z-10" />
+
+//         {/* Center Circle Video */}
+//         <div className="absolute inset-0 flex items-center justify-center z-20">
+//           <div className="relative w-64 h-64 sm:w-20 sm:h-20 md:w-[28rem] md:h-[28rem] lg:w-[37rem] lg:h-[37rem] rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm">
+//             <video
+//               className="w-full h-full object-cover"
+//               autoPlay
+//               loop
+//               muted
+//               playsInline
+//             >
+//               <source src="/bussiness.mp4" type="video/mp4" />
+//               Your browser does not support the video tag.
+//             </video>
+//             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
+
+
 "use client"
 
+import { useState } from "react"
+
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Handle form submission
+    alert("Message submitted!")
+    setIsModalOpen(false)
+  }
+
   return (
-    <section className="relative w-full bg-[#FFF8E7] py-12 md:py-12 overflow-hidden">
-      {/* Heading Section */}
-      <div className="container mx-auto px-4 text-center mb-12 md:mb-16 mt-18 sm:mt-10 md:mt-14">
-        {/* AGENIUS Title with Badges */}
-        <div className="relative inline-block">
-          <div className="flex justify-center">
-            <h1 className="font-oswald text-[120px] md:text-[140px] lg:text-[220px] font-bold text-[#3e1827] leading-none tracking-tighter" style={{ textShadow: '4px 4px 0px #fbe941' }}>
-              FdMS
-            </h1>
-          </div>
-
-          {/* Decorative Badges */}
-          <div className="absolute -left-8 md:-left-16 top-4 md:top-8 bg-[#C8E6C9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[-8deg] shadow-md">
-            Timeless
-          </div>
-          <div className="absolute left-1/2 -translate-x-1/2 -top-4 md:-top-6 bg-[#F8BBD0] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[5deg] shadow-md">
-            Creative
-          </div>
-          <div className="absolute -right-8 md:-right-16 top-4 md:top-8 bg-[#D1C4E9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[8deg] shadow-md">
-            Edgy
-          </div>
-        </div>
-
-        <h2 className="font-oswald text-1xl md:text-1xl lg:text-2xl font-medium text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
-          A Creative Agency by:
-
-          <br />
-          SAUHITYAA
-
-        </h2>
-
-        {/* Subheading */}
-        <h2 className="font-oswald text-2xl md:text-3xl lg:text-4xl font-semibold text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
-          Designed to be seen.
-
-          <br />
-          Built to be remembered.
-        </h2>
-
-        {/* CTA Button */}
-        <button className="bg-[#FFE878] hover:bg-[#ffed4e] text-lg md:text-xl font-bold px-8 md:px-7 py-3 md:py-3 text-[#3b001b] font-oswald rounded-full border-b-4 border-[#3b001b] shadow-md transition-all duration-200 active:translate-y-1 active:shadow-sm">
-          Book a Call
-        </button>
-      </div>
-
-      {/* Full-width Background Image */}
-      <div className="relative w-full flex items-center justify-center mt-8 md:mt-16">
-        {/* Background with radial gradient design */}
+    <>
+      {/* Modal Backdrop */}
+      {isModalOpen && (
         <div
-          className="w-full h-[20rem] lg:h-[40rem] md:h-[30rem] sm:h-[20rem] xs:h-[22rem]"
-          style={{
-            backgroundImage: 'radial-gradient(circle at center center, #F6C2F4 0%, #FAFABF 100%), repeating-radial-gradient(circle at center center, rgb(240, 151, 197), rgb(240, 151, 197), 19px, transparent 38px, transparent 19px)',
-            backgroundBlendMode: 'multiply'
-          }}
-        />
-
-        {/* Top Fade Effect */}
-        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#FFF8E7] to-transparent pointer-events-none z-10" />
-
-        {/* Center Circle Video */}
-        <div className="absolute inset-0 flex items-center justify-center z-20">
-          <div className="relative w-64 h-64 sm:w-20 sm:h-20 md:w-[28rem] md:h-[28rem] lg:w-[37rem] lg:h-[37rem] rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm">
-            <video
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setIsModalOpen(false)}
+        >
+          {/* Modal */}
+          <div
+            className="bg-[#FFF8B8] rounded-lg shadow-2xl w-full max-w-sm relative p-4 md:p-5"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-3 right-3 text-[#3D1A1F] hover:text-[#5D2A2F] text-xl font-bold transition-colors"
             >
-              <source src="/bussiness.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+              ✕
+            </button>
+
+            {/* Modal Title */}
+            <h2 className="font-oswald text-2xl md:text-3xl font-bold text-[#3D1A1F] mb-5">
+              Need a custom quote?
+            </h2>
+
+            {/* Form */}
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {/* Name Field */}
+              <div>
+                <label className="block font-oswald text-base font-semibold text-[#3D1A1F] mb-1">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  required
+                  className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
+                />
+              </div>
+
+              {/* Email Field */}
+              <div>
+                <label className="block font-oswald text-base font-semibold text-[#3D1A1F] mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  required
+                  className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
+                />
+              </div>
+
+              {/* Phone Field */}
+              <div>
+                <label className="block font-oswald text-base font-semibold text-[#3D1A1F] mb-1">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  required
+                  className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
+                />
+              </div>
+
+              {/* Message Field */}
+              <div>
+                <label className="block font-oswald text-base font-semibold text-[#3D1A1F] mb-1">
+                  Message
+                </label>
+                <textarea
+                  rows={3}
+                  required
+                  className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald resize-none transition-colors"
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="bg-[#FFE066] hover:bg-[#FFD633] text-[#3D1A1F] font-oswald font-bold text-base px-6 py-2.5 rounded-full border-b-2 border-[#3D1A1F] shadow-md transition-all duration-200 active:translate-y-1 active:shadow-sm w-full"
+              >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
+
+      )}
+
+      {/* Hero Section */}
+      <section className="relative w-full bg-[#FFF8E7] py-12 md:py-12 overflow-hidden">
+        {/* Heading Section */}
+        <div className="container mx-auto px-4 text-center mb-12 md:mb-16 mt-18 sm:mt-10 md:mt-14">
+          {/* AGENIUS Title with Badges */}
+          <div className="relative inline-block">
+            <div className="flex justify-center">
+              <h1 className="font-oswald text-[120px] md:text-[140px] lg:text-[220px] font-bold text-[#3e1827] leading-none tracking-tighter" style={{ textShadow: '4px 4px 0px #fbe941' }}>
+                FdMS
+              </h1>
+            </div>
+
+            {/* Decorative Badges */}
+            <div className="absolute -left-8 md:-left-16 top-4 md:top-8 bg-[#C8E6C9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[-8deg] shadow-md">
+              Timeless
+            </div>
+            <div className="absolute left-1/2 -translate-x-1/2 -top-4 md:-top-6 bg-[#F8BBD0] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[5deg] shadow-md">
+              Creative
+            </div>
+            <div className="absolute -right-8 md:-right-16 top-4 md:top-8 bg-[#D1C4E9] text-[#3D1A1F] px-3 py-1 rounded-full text-xs md:text-sm font-bold rotate-[8deg] shadow-md">
+              Edgy
+            </div>
+          </div>
+
+          <h2 className="font-oswald text-1xl md:text-1xl lg:text-2xl font-medium text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
+            A Creative Agency by:
+            <br />
+            SAUHITYAA
+          </h2>
+
+          {/* Subheading */}
+          <h2 className="font-oswald text-2xl md:text-3xl lg:text-4xl font-semibold text-[#3D1A1F] mb-6 md:mb-8 leading-tight">
+            Designed to be seen.
+            <br />
+            Built to be remembered.
+          </h2>
+
+          {/* CTA Button */}
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="bg-[#FFE878] hover:bg-[#ffed4e] text-lg md:text-xl font-bold px-8 md:px-7 py-3 md:py-3 text-[#3b001b] font-oswald rounded-full border-b-4 border-[#3b001b] shadow-md transition-all duration-200 active:translate-y-1 active:shadow-sm"
+          >
+            Book a Call
+          </button>
+        </div>
+
+        {/* Full-width Background Image */}
+        <div className="relative w-full flex items-center justify-center mt-8 md:mt-16">
+          {/* Background with radial gradient design */}
+          <div
+            className="w-full h-[20rem] lg:h-[40rem] md:h-[30rem] sm:h-[20rem] xs:h-[22rem]"
+            style={{
+              backgroundImage: 'radial-gradient(circle at center center, #F6C2F4 0%, #FAFABF 100%), repeating-radial-gradient(circle at center center, rgb(240, 151, 197), rgb(240, 151, 197), 19px, transparent 38px, transparent 19px)',
+              backgroundBlendMode: 'multiply'
+            }}
+          />
+
+          {/* Top Fade Effect */}
+          <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-[#FFF8E7] to-transparent pointer-events-none z-10" />
+
+          {/* Center Circle Video */}
+          <div className="absolute inset-0 flex items-center justify-center z-20">
+            <div className="relative w-64 h-64 sm:w-20 sm:h-20 md:w-[28rem] md:h-[28rem] lg:w-[37rem] lg:h-[37rem] rounded-full overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm">
+              <video
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/bussiness.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
