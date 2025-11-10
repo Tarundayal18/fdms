@@ -15,21 +15,21 @@ const stepsData = [
     title: "Strategy & Concepts",
     description:
       "With a shared understanding in place, we map the plan and explore creative directions that will move the needle.",
-    imageSrc: "/Container.png",
+    imageSrc: "/Container2.png",
   },
   {
     id: 3,
     title: "Design & Development",
     description:
       "We bring the concepts to life with beautifully crafted design and solid builds, keeping you looped in the whole way.",
-    imageSrc: "/images/step3.png",
+    imageSrc: "/Container3.png",
   },
   {
     id: 4,
     title: "Launch & High Fives",
     description:
       "We go live, you look incredible, and we celebrate. Ongoing help later? Always just a message away.",
-    imageSrc: "/images/step4.png",
+    imageSrc: "/Container4.png",
   },
 ]
 
