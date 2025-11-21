@@ -55,11 +55,7 @@ const faqItems: FaqItem[] = [
 ]
 
 export default function FaqSection() {
-<<<<<<< HEAD
   const [expandedId, setExpandedId] = useState<number | null>(0)
-=======
-  const [expandedId, setExpandedId] = useState<number | null>(2)
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
   const toggleExpand = (id: number) => {
     setExpandedId(expandedId === id ? null : id)
