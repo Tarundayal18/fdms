@@ -129,14 +129,11 @@ const handleChange = (e: any) => {
                 </label>
                 <input
                   type="text"
-<<<<<<< HEAD
                   name="name"
                   required
                    value={formData.name}
                   onChange={handleChange}
-=======
                   required
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                   className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
                 />
               </div>
