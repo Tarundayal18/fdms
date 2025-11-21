@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 // "use client"
 
 // import { useState } from "react"
@@ -258,6 +259,8 @@
 
 
 
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 "use client"
 
 import { useState } from "react"
@@ -345,7 +348,11 @@ const subServices: Record<string, SubService[]> = {
     },
     {
       id: "Brand Makeover",
+<<<<<<< HEAD
       title: "Brand Makeover",
+=======
+      title: "/services/1/Brand Makeover",
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
       description:
         "We transform existing brands with complete identity revamps — fresh, relevant, and future-ready.",
       image: "/services/1/Branding Makeover.png",
@@ -436,6 +443,7 @@ export default function ServicesSection() {
 
   return (
     <section className="bg-orange-50 py-16 px-4 md:px-8 lg:px-16">
+<<<<<<< HEAD
       <style jsx>{`
         @keyframes slideDown {
           from {
@@ -477,6 +485,8 @@ export default function ServicesSection() {
         .stagger-6 { animation-delay: 0.6s; opacity: 0; }
       `}</style>
 
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
       {/* Heading */}
       <div className="max-w-7xl mx-auto mb-12 flex justify-center">
         <div className="relative inline-block text-center">
@@ -511,7 +521,11 @@ export default function ServicesSection() {
 
             {/* Expanded View */}
             {expandedId === service.id && (
+<<<<<<< HEAD
               <div className={`${service.bgColor} p-8 md:p-12 rounded-2xl overflow-hidden animate-slideDown`}>
+=======
+              <div className={`${service.bgColor} p-8 md:p-12 rounded-2xl overflow-hidden animate-expand`}>
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                 {/* Header */}
                 <div className="flex items-start justify-between mb-8 pb-6 border-b-2 border-[#3B001B]">
                   <div>
@@ -528,11 +542,16 @@ export default function ServicesSection() {
 
                 {/* Grid of Sub Services */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<<<<<<< HEAD
                   {subServices[service.id]?.map((subService, index) => (
                     <div 
                       key={subService.id} 
                       className={`flex flex-col animate-fadeInUp stagger-${Math.min(index + 1, 6)}`}
                     >
+=======
+                  {subServices[service.id]?.map((subService) => (
+                    <div key={subService.id} className="flex flex-col">
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                       {/* Title */}
                       <h4 className="font-bold text-lg text-[#3B001B] mb-2 underline">{subService.title}</h4>
 
@@ -556,5 +575,10 @@ export default function ServicesSection() {
         ))}
       </div>
     </section>
+<<<<<<< HEAD
   ) 
 }
+=======
+  )
+}
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72

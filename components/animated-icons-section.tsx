@@ -199,7 +199,11 @@ export default function AnimatedIconsSection() {
           }
         }
         .animate-snake-scroll-slow {
+<<<<<<< HEAD
           animation: snake-scroll-slow 45s linear infinite;
+=======
+          animation: snake-scroll-slow 30s linear infinite;
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         }
       `}</style>
     </section>

@@ -102,7 +102,11 @@ export default function Socialmedia() {
             {/* Right Illustration */}
             <div className="flex justify-center lg:justify-end">
               <img
+<<<<<<< HEAD
                 src="/social0.jpg"
+=======
+                src="/social.png"
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                 alt="Business Solutions Illustration"
                 className="w-full max-w-md lg:max-w-lg object-contain"
               />
@@ -118,6 +122,10 @@ export default function Socialmedia() {
             <div
               key={card.id}
               onClick={() => handleCardClick(card.id)}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
               className="relative w-full rounded-[2rem] overflow-hidden duration-300"
             >
               <img
@@ -125,6 +133,7 @@ export default function Socialmedia() {
                 alt={card.title}
                 className="w-full h-90 sm:h-96 lg:h-[24rem] object-cover"
               />
+<<<<<<< HEAD
 
               <div className="absolute top-8 left-8 right-8 text-white">
                 {/* Title: small increase */}
@@ -143,6 +152,17 @@ export default function Socialmedia() {
               >
                 {/* Arrow: slight increase */}
                 <span className="text-[1.4rem]">→</span>
+=======
+              <div className="absolute top-8 left-8 right-8 text-white">
+                <h2 className="text-4xl font-bold font-oswald">{card.title}</h2>
+                <p className="mt-2 text-[1.205rem] font-oswald">{card.text}</p>
+              </div>
+              <button onClick={(e) => {
+                e.stopPropagation(); // prevent triggering card click twice
+                handleCardClick(card.id);
+              }} className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
+                <span className="text-xl">→</span>
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
               </button>
             </div>
           ))}

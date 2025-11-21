@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 "use client";
 
 import React, { useState } from "react";
@@ -22,6 +25,7 @@ export default function ContactSection() {
     }));
   };
 
+<<<<<<< HEAD
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -50,6 +54,12 @@ export default function ContactSection() {
     } else {
       alert("Something went wrong. Please try again.");
     }
+=======
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    setFormData({ name: "", email: "", phone: "", message: "" });
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
   };
 
   return (
@@ -62,7 +72,10 @@ export default function ContactSection() {
         style={{ backgroundColor: "#FAFABF" }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
           {/* Left Side */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="w-full flex justify-center md:justify-start mb-8 ">
@@ -84,17 +97,27 @@ export default function ContactSection() {
               </h2>
               <p
                 className="text-base md:text-lg w-64"
+<<<<<<< HEAD
                 style={{
                   color: "#3B001B",
                   fontFamily: "Oswald",
                   textAlign: "center",
                 }}
+=======
+                style={{ color: "#3B001B", fontFamily: "Oswald" , textAlign:'center' }}
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
               >
                 Don't let your ideas sit idle—slide into our inbox and let's make magic!
               </p>
             </div>
           </div>
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
           {/* Right Side - Contact Form */}
           <div className="mx-2 md:mx-6">
             <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
@@ -122,8 +145,13 @@ export default function ContactSection() {
                         field === "email"
                           ? "email"
                           : field === "phone"
+<<<<<<< HEAD
                           ? "tel"
                           : "text"
+=======
+                            ? "tel"
+                            : "text"
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                       }
                       name={field}
                       value={formData[field as keyof typeof formData]}

@@ -220,9 +220,15 @@ const testimonials = [
     quote:
       '“They gave our real estate brand a premium edge. The website feels modern, trustworthy, and has become our best sales tool.”',
     company: "Founder, KDR Realty",
+<<<<<<< HEAD
     avatar: "/testimoles/01.png", // updated image
     bgColor: "bg-[#f09fa8]",
     logo: "/testimoleslogo/01.png", // 👈 logo path
+=======
+    avatar: "/testimoles/1.png", // updated image
+    bgColor: "bg-[#f09fa8]",
+    logo: "/testimoleslogo/1.png", // 👈 logo path
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
     textColor: "text-[#3b001b]",
     borderColor: "border-pink-300",
@@ -233,9 +239,15 @@ const testimonials = [
     quote:
       '“Their creative branding with sharp performance marketing made us unforgettable. Strategy met execution perfectly — results spoke louder than promises.”',
     company: "Founder, Rolling Crunchy's",
+<<<<<<< HEAD
     avatar: "/testimoles/02.png", // updated image
     bgColor: "bg-[#f6c2f4]",
     logo: "/testimoleslogo/02.png", // 👈 logo path
+=======
+    avatar: "/testimoles/2.png", // updated image
+    bgColor: "bg-[#f6c2f4]",
+    logo: "/testimoleslogo/2.png", // 👈 logo path
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
     textColor: "text-[#3b001b]",
     borderColor: "border-purple-300",
@@ -246,9 +258,15 @@ const testimonials = [
     quote:
       '“From logos to gifting, everything felt premium and personal. They stitched a consistent identity that elevated our brand presence everywhere.”',
     company: "Founder, ETIA Consult",
+<<<<<<< HEAD
     avatar: "/testimoles/03.png", // updated image
     bgColor: "bg-[#fefae7]",
     logo: "/testimoleslogo/03.png", // 👈 logo path
+=======
+    avatar: "/testimoles/3.png", // updated image
+    bgColor: "bg-[#fefae7]",
+    logo: "/testimoleslogo/3.png", // 👈 logo path
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
     textColor: "text-[#3b001b]",
     borderColor: "border-yellow-200",
@@ -259,9 +277,15 @@ const testimonials = [
     quote:
       '“The rebrand and website redesign felt like a rebirth. Bold, clean, and modern — exactly what we needed to stand apart.”',
     company: "Head of Product & Marketing, EdgeNxt",
+<<<<<<< HEAD
     avatar: "/testimoles/04.png", // updated image
     bgColor: "bg-[#c7caff]",
     logo: "/testimoleslogo/04.png", // 👈 logo path
+=======
+    avatar: "/testimoles/4.png", // updated image
+    bgColor: "bg-[#c7caff]",
+    logo: "/testimoleslogo/4.png", // 👈 logo path
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
     textColor: "text-[#3b001b]",
     borderColor: "border-blue-300",
@@ -272,9 +296,15 @@ const testimonials = [
     quote:
       '“Smart branding, sleek website, and campaigns that clicked. They understood our market better than we did — impact was immediate.”',
     company: "Founder, 1Di.ca",
+<<<<<<< HEAD
     avatar: "/testimoles/05.png", // updated image
     bgColor: "bg-[#f6c2f4]",
     logo: "/testimoleslogo/05.png", // 👈 logo path
+=======
+    avatar: "/testimoles/5.png", // updated image
+    bgColor: "bg-[#f6c2f4]",
+    logo: "/testimoleslogo/5.png", // 👈 logo path
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
     textColor: "text-[#3b001b]",
     borderColor: "border-blue-300",
@@ -285,9 +315,15 @@ const testimonials = [
     quote:
       '“Their design was not just beautiful, it was intuitive. Branding blended with seamless UX — users loved it from day one.”',
     company: "Founder, NORIND",
+<<<<<<< HEAD
     avatar: "/testimoles/06.png", // updated image
     bgColor: "bg-[#c0ecbf]",
     logo: "/testimoleslogo/06.png", // 👈 logo path
+=======
+    avatar: "/testimoles/6.png", // updated image
+    bgColor: "bg-[#c0ecbf]",
+    logo: "/testimoleslogo/6.png", // 👈 logo path
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
     textColor: "text-[#3b001b]",
     borderColor: "border-blue-300",

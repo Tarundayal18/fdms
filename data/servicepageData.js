@@ -3,8 +3,11 @@
 export const servicePageData = [
     {
         id: 1,
+<<<<<<< HEAD
         mainheading: "LOGO MAGIC",
         MainImage: "/services/images/1.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Crafting logos that speak louder than your brand pitch.",
         subheading: "We create memorable logos and identity kits that visually define your brand’s purpose and personality.",
         serviceCards: [
@@ -42,8 +45,11 @@ export const servicePageData = [
     },
     {
         id: 2,
+<<<<<<< HEAD
         mainheading: "Pack Attack",
         MainImage: "/services/images/2.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Packaging that makes your brand too good to ignore.",
         subheading: "We design packaging and brand collaterals that make your product irresistible — on shelves or screens.",
         serviceCards: [
@@ -81,8 +87,11 @@ export const servicePageData = [
     },
     {
         id: 3,
+<<<<<<< HEAD
         mainheading: "Collateral Crush",
         MainImage: "/services/images/3.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Marketing collaterals that do more than just decorate desks.",
         subheading: "We design brochures, presentations, flyers, and digital decks that turn your brand narrative into conversion power",
         serviceCards: [
@@ -120,8 +129,11 @@ export const servicePageData = [
     },
     {
         id: 4,
+<<<<<<< HEAD
         mainheading: "Identity Kit",
         MainImage: "/services/images/4.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Stationery that screams brand personality — not corporate boredom.",
         subheading: "We create brand identity kits with everything from notepads to ID cards — where every detail speaks your brand language.",
         serviceCards: [
@@ -159,8 +171,11 @@ export const servicePageData = [
     },
     {
         id: 5,
+<<<<<<< HEAD
         mainheading: "Branding As A Service",
         MainImage: "/services/images/5.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Your in-house creative team — without the overhead chaos.",
         subheading: "Monthly subscription-based branding support that adapts to your needs, billed only for usage.",
         serviceCards: [
@@ -198,8 +213,11 @@ export const servicePageData = [
     },
     {
         id: 6,
+<<<<<<< HEAD
         mainheading: "Brand Makeover",
         MainImage: "/services/images/6.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Rebranding that feels like a glow-up, not an identity crisis.",
         subheading: "We transform existing brands with complete identity revamps — fresh, relevant, and future-ready.",
         serviceCards: [
@@ -237,8 +255,11 @@ export const servicePageData = [
     },
     {
         id: 7,
+<<<<<<< HEAD
         mainheading: "Post Packs",
         MainImage: "/services/images/7.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Social media management that’s smarter, not louder.",
         subheading: "Monthly or quarterly bundled social media solutions that make your brand stay consistent, engaging, and relevant.",
         serviceCards: [
@@ -277,8 +298,11 @@ export const servicePageData = [
 
     {
         id: 8,
+<<<<<<< HEAD
         mainheading: "Pay & Play",
         MainImage: "/services/images/8.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Pay for what you post, not what you don’t.",
         subheading: "A flexible social media service billed only on per-post usage with monthly reports.",
         serviceCards: [
@@ -316,8 +340,11 @@ export const servicePageData = [
     },
     {
         id: 9,
+<<<<<<< HEAD
         mainheading: "CXO Glow",
         MainImage: "/services/images/9.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Your LinkedIn, managed like a thought leader’s playground.",
         subheading: "We discreetly manage and grow LinkedIn profiles for CXOs, founders, and busy professionals.",
         serviceCards: [
@@ -355,8 +382,11 @@ export const servicePageData = [
     },
     {
         id: 10,
+<<<<<<< HEAD
         mainheading: "Buzz Builder",
         MainImage: "/services/images/10.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Goal-driven campaigns that build buzz and bring results.",
         subheading: "We create custom social campaigns designed to meet specific objectives within realistic budgets.",
         serviceCards: [
@@ -394,8 +424,11 @@ export const servicePageData = [
     },
     {
         id: 11,
+<<<<<<< HEAD
          mainheading: "Code Craft",
          MainImage: "/services/images/11.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Custom-coded websites crafted for speed, scalability, and soul.",
         subheading: "We design and build websites from scratch — fast, secure, and uniquely yours.",
         serviceCards: [
@@ -433,8 +466,11 @@ export const servicePageData = [
     },
     {
         id: 12,
+<<<<<<< HEAD
         mainheading: "Plug & Play",
         MainImage: "/services/images/12.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Smart websites built fast — no code, no chaos.",
         subheading: "We develop dynamic websites on platforms like WordPress, Shopify, and Wix for quick, cost-efficient launches.",
         serviceCards: [
@@ -472,8 +508,11 @@ export const servicePageData = [
     },
     {
         id: 13,
+<<<<<<< HEAD
         mainheading: "Shop Stop",
         MainImage: "/services/images/13.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "eCommerce websites made affordable — pay monthly, not upfront.",
         subheading: "A 12-month subscription plan that covers your website, hosting, and ongoing marketing.",
         serviceCards: [
@@ -511,8 +550,11 @@ export const servicePageData = [
     },
     {
         id: 14,
+<<<<<<< HEAD
         mainheading: "App Attack",
         MainImage: "/services/images/14.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Mobile apps that perform, engage, and convert — beautifully.",
         subheading: "We design and develop mobile apps for Android and iOS — built to grow your digital reach.",
         serviceCards: [
@@ -550,8 +592,11 @@ export const servicePageData = [
     },
     {
         id: 15,
+<<<<<<< HEAD
         mainheading: "Search Surge",
         MainImage: "/services/images/15.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Google Ads that spend smart, not just spend more.",
         subheading: "We plan, create, and optimize search ad campaigns that drive real ROI.",
         serviceCards: [
@@ -589,8 +634,11 @@ export const servicePageData = [
     },
     {
         id: 16,
+<<<<<<< HEAD
         mainheading: "Social Spark",
         MainImage: "/services/images/16.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Igniting growth through Meta, WhatsApp, and LinkedIn ads.",
         subheading: "We craft paid social campaigns that build awareness, engagement, and conversions.",
         serviceCards: [
@@ -628,8 +676,11 @@ export const servicePageData = [
     },
     {
         id: 17,
+<<<<<<< HEAD
          mainheading: "Data Drill",
          MainImage: "/services/images/17.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Dig deep into data, not just dashboards.",
         subheading: "We integrate multi-channel analytics for 360° marketing insights and smarter business decisions.",
         serviceCards: [
@@ -667,8 +718,11 @@ export const servicePageData = [
     },
     {
         id: 18,
+<<<<<<< HEAD
         mainheading: "Growth Grind",
         MainImage: "/services/images/18.jpg",
+=======
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         heading: "Your business goals, powered by performance and precision.",
         subheading: "We create custom goal-based marketing plans that deliver measurable growth.",
         serviceCards: [

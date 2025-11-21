@@ -24,7 +24,11 @@ export default function Home() {
       <HeroSection />
       <FeaturesSection />
       <AnimatedIconsSection />
+<<<<<<< HEAD
       {/* <ServicesSection /> */}
+=======
+      <ServicesSection />
+>>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
       <WhyBestSection />
       {/* <ProjectsGridSection /> */}
       <MinimumProjectsGrid />
