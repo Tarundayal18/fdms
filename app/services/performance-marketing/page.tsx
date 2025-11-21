@@ -115,16 +115,9 @@ export default function Performancemarket() {
       <section className="bg-stone-50 py-14 px-4 sm:px-8 lg:px-12">
         <div className="max-w-8xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10">
           {cards.map((card) => (
-<<<<<<< HEAD
              <div
               key={card.id}
               onClick={() => handleCardClick(card.id)}
-=======
-            <div
-              key={card.id}
-              onClick={() => handleCardClick(card.id)}
-
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
               className="relative w-full rounded-[2rem] overflow-hidden duration-300"
             >
               <img
@@ -132,7 +125,6 @@ export default function Performancemarket() {
                 alt={card.title}
                 className="w-full h-90 sm:h-96 lg:h-[24rem] object-cover"
               />
-<<<<<<< HEAD
 
               <div className="absolute top-8 left-8 right-8 text-white">
                 {/* Title: small increase */}
@@ -151,17 +143,6 @@ export default function Performancemarket() {
               >
                 {/* Arrow: slight increase */}
                 <span className="text-[1.4rem]">→</span>
-=======
-              <div className="absolute top-8 left-8 right-8 text-white">
-                <h2 className="text-4xl font-bold font-oswald">{card.title}</h2>
-                <p className="mt-2 text-[1.205rem] font-oswald">{card.text}</p>
-              </div>
-              <button onClick={(e) => {
-                e.stopPropagation(); // prevent triggering card click twice
-                handleCardClick(card.id);
-              }} className="absolute bottom-8 right-8 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 transition-transform">
-                <span className="text-xl">→</span>
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
               </button>
             </div>
           ))}

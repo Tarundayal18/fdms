@@ -164,11 +164,7 @@ export default function FooterSection() {
                     href="mailto:godigital@fdms.ec.in"
                     className="text-gray-300 hover:text-white transition text-base font-medium block"
                   >
-<<<<<<< HEAD
                     goditigal@fdms.co.in
-=======
-                    godigital@fdms.co.in
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                   </a>
                   <a
                     href="tel:+917718064819"
@@ -183,11 +179,7 @@ export default function FooterSection() {
             {/* Bottom Section - Copyright */}
             <div className="border-t border-gray-700/30 pt-8">
               <p className="text-gray-500 text-sm text-center">
-<<<<<<< HEAD
                 © 2025 FdMS. Unit of Fanatisch Marketing Services (P) Ltd.
-=======
-                © 2025 FdMS. In partnership with Krezine.
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
               </p>
             </div>
           </div>

@@ -14,7 +14,6 @@ import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 
-<<<<<<< HEAD
 function MainServiceContent() {
 
   const searchParams = useSearchParams();
@@ -65,39 +64,16 @@ const handleChange = (e: any) => {
     }
   };
 
-=======
- function MainServiceContent() {
-
-    const searchParams = useSearchParams();
-  const id = Number(searchParams.get("id")); // default 1 agar id na mile
-
-  const service = servicePageData.find((item) => item.id === id);
-    const [isModalOpen, setIsModalOpen] = useState(false)
-  
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 
   if (!service) {
     return <p className="text-center text-xl py-10">Service not found</p>;
   }
 
-<<<<<<< HEAD
  
 
   return (
     <>
       {isModalOpen && (
-=======
-    const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    alert("Message submitted!")
-    setIsModalOpen(false)
-  }
-
-  return(
-     <>
-     {isModalOpen && (
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
         <div
           className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
           onClick={() => setIsModalOpen(false)}
@@ -133,7 +109,6 @@ const handleChange = (e: any) => {
                   required
                    value={formData.name}
                   onChange={handleChange}
-                  required
                   className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
                 />
               </div>
@@ -145,14 +120,10 @@ const handleChange = (e: any) => {
                 </label>
                 <input
                   type="email"
-<<<<<<< HEAD
                   name="email"
                   required
                    value={formData.email}
                   onChange={handleChange}
-=======
-                  required
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                   className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
                 />
               </div>
@@ -165,12 +136,9 @@ const handleChange = (e: any) => {
                 <input
                   type="tel"
                   required
-<<<<<<< HEAD
                   name="phone"
                    value={formData.phone}
                   onChange={handleChange}
-=======
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                   className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald transition-colors"
                 />
               </div>
@@ -183,12 +151,9 @@ const handleChange = (e: any) => {
                 <textarea
                   rows={3}
                   required
-<<<<<<< HEAD
                   name="message"
                    value={formData.message}
                   onChange={handleChange}
-=======
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
                   className="w-full bg-transparent border-b border-[#3D1A1F] focus:border-[#5D2A2F] outline-none py-1.5 text-[#3D1A1F] font-oswald resize-none transition-colors"
                 />
               </div>
@@ -205,7 +170,6 @@ const handleChange = (e: any) => {
         </div>
 
       )}
-<<<<<<< HEAD
       <main className="font-sans bg-white">
         <Navbar />
 
@@ -285,60 +249,6 @@ const handleChange = (e: any) => {
         {/* Diagonal Striped Banner Section */}
         <section className="relative w-full overflow-hidden bg-gradient-to-b from-blue-50 to-white py-12 md:py-20">
           <style>{`
-=======
-    <main className="font-sans bg-white">
-             <Navbar />
-      
-
-      {/* Hero Section with CTA */}
-      <section className="w-full py-20 md:py-32 px-4 md:px-8 bg-[#f3f4f6]">
-        <div className="max-w-8xl mx-auto text-center">
-          {/* Founder Avatars */}
-          <div className="flex justify-center items-center gap-3 mb-8">
-            <div className="flex -space-x-4">
-              <div className="w-10 h-10 md:w-12 md:h-12 font-oswald rounded-full bg-yellow-300 border-2 border-white flex items-center justify-center text-sm font-bold text-gray-900">
-                JD
-              </div>
-              <div className="w-10 h-10 md:w-12 md:h-12 font-oswald rounded-full bg-amber-900 border-2 border-white flex items-center justify-center text-sm font-bold text-white">
-                AK
-              </div>
-              <div className="w-10 h-10 md:w-12 md:h-12 font-oswald rounded-full bg-gray-600 border-2 border-white flex items-center justify-center text-sm font-bold text-white">
-                RK
-              </div>
-            </div>
-            <p className="text-gray-700 font-oswald text-sm md:text-base font-semibold">Trusted by founders.</p>
-          </div>
-
-          {/* Main Heading */}
-          <h1 className="text-4xl font-oswald md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            {/* Google Ads that spend smart, not just spend more. */}
-                      {service.heading}
-
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-lg font-oswald md:text-xl text-gray-700 mb-10">
-            {/* We plan, create, and optimize search ad campaigns that drive real ROI. */}
-                      {service.subheading}
-
-          </p>
-
-          {/* CTA Button */}
-          <button
-          onClick={() => setIsModalOpen(true)}
-           className="bg-gray-900 font-oswald text-white font-bold px-6 md:px-8 py-2 md:py-3 rounded-full hover:bg-gray-800 transition-colors text-base md:text-lg">
-            Book A Call
-          </button>
-        </div>
-      </section>
-
-      <AnimatedIconsSection />
-
-
-      {/* Diagonal Striped Banner Section */}
-      <section className="relative w-full overflow-hidden bg-gradient-to-b from-blue-50 to-white py-12 md:py-20">
-        <style>{`
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
             @keyframes slideLeft {
               from {
                 transform: translateX(0);
@@ -366,7 +276,6 @@ const handleChange = (e: any) => {
             }
           `}</style>
 
-<<<<<<< HEAD
           <div className="relative h-64 md:h-80 flex items-center justify-center">
             {/* Orange Stripe */}
             <div
@@ -500,141 +409,6 @@ const handleChange = (e: any) => {
   )
 }
 
-=======
-        <div className="relative h-64 md:h-80 flex items-center justify-center">
-          {/* Orange Stripe */}
-          <div
-            className="absolute top-8 md:top-12 left-0 w-full h-20 md:h-25 bg-[#ff5c36] transform -skew-y-3 overflow-hidden z-10"
-          >
-            <div className="flex items-center h-full overflow-hidden">
-              <div className="flex items-center gap-4 md:gap-8 px-4 text-white font-bold text-xl md:text-2xl whitespace-nowrap animate-slide-left">
-                <span>Collateral Crush</span>
-                <span className="text-3xl">×</span>
-                <span>Identity Kit</span>
-                <span className="text-3xl">×</span>
-                <span>Branding As A Service</span>
-                <span className="text-3xl">×</span>
-                <span>Brand Makeover</span>
-                <span className="text-3xl">×</span>
-                <span>Post Packs</span>
-                <span className="text-3xl">×</span>
-                <span>Pay & Play</span>
-                <span className="text-3xl">×</span>
-                <span>Cxo Glow</span>
-                <span className="text-3xl">×</span>
-                <span>Identity Kit</span>
-                <span className="text-3xl">×</span>
-                <span>Branding As A Service</span>
-                <span className="text-3xl">×</span>
-                <span>Brand Makeover</span>
-                <span className="text-3xl">×</span>
-                <span>Post Packs</span>
-                <span className="text-3xl">×</span>
-                <span>Pay & Play</span>
-                <span className="text-3xl">×</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Navy Stripe */}
-          <div
-            className="absolute bottom-8 md:bottom-12 left-0 w-full h-20 md:h-25 bg-[#111827] transform skew-y-3 overflow-hidden z-20"
-          >
-            <div className="flex items-center h-full overflow-hidden">
-              <div className="flex items-center gap-4 md:gap-8 px-4 text-white font-bold text-xl md:text-2xl whitespace-nowrap animate-slide-right">
-                <span>100+ Customers</span>
-                <span className="text-2xl">×</span>
-                <span>Senior Designer</span>
-                <span className="text-2xl">×</span>
-                <span>10+ Years of Experience</span>
-                <span className="text-2xl">×</span>
-                <span>100+ Customers</span>
-                <span className="text-2xl">×</span>
-                <span>Senior Designer</span>
-                <span className="text-2xl">×</span>
-                <span>10+ Years of Experience</span>
-                <span className="text-2xl">×</span>
-                <span>100+ Customers</span>
-                <span className="text-2xl">×</span>
-                <span>Senior Designer</span>
-                <span className="text-2xl">×</span>
-                <span>10+ Years of Experience</span>
-                <span className="text-2xl">×</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Service Cards Section */}
-      <section className="w-full py-16 md:py-24 px-4 md:px-8 bg-[#3e1827]">
-        <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
-          {/* Mint Green Card */}
-          <div className="bg-green-100 rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-3xl font-oswald md:text-4xl font-bold text-[#3e1827] mb-4">What We Actually Do</h2>
-            <p className="text-[#3e1827] font-oswald text-base md:text-lg leading-relaxed">
-              {/* We run strategic Google Ads campaigns with focused keyword research, ad copywriting, and conversion
-              tracking to maximize performance and minimize wastage. */}
-              {service.serviceCards[0].description}
-            </p>
-          </div>
-
-          {/* Pink Card */}
-          <div className="bg-pink-200 rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-3xl font-oswald md:text-4xl font-bold text-[#3e1827] mb-4">Why We're Not Like Everyone Else</h2>
-            <p className="text-[#3e1827] font-oswald text-base md:text-lg leading-relaxed">
-              {/* Others chase clicks. We chase conversions. Every ad we run is tracked, tested, and tuned for
-              profitability. */}
-                            {service.serviceCards[1].description}
-
-            </p>
-          </div>
-
-          {/* Cream Card */}
-          <div className="bg-[#fdebdb] rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-3xl font-oswald md:text-4xl font-bold text-[#3e1827] mb-4">The Real Problem (And Why It Hurts)</h2>
-            <p className="text-[#3e1827] font-oswald text-base md:text-lg leading-relaxed">
-              {/* Brands burn budgets on irrelevant clicks, poor tracking, and unoptimized campaigns that don’t deliver meaningful leads. */}
-                            {service.serviceCards[2].description}
-
-            </p>
-          </div>
-
-            {/* Cream Card */}
-          <div className="bg-[#d6e2f0] rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-3xl font-oswald md:text-4xl font-bold text-[#3e1827] mb-4">How We Fix It</h2>
-            <p className="text-[#3e1827] font-oswald text-base md:text-lg leading-relaxed">
-              {/* We constantly refine campaigns using data and insight — not assumptions — to deliver maximum ROI at minimum cost. */}
-                            {service.serviceCards[3].description}
-
-            </p>
-          </div>
-
-            {/* Cream Card */}
-          <div className="bg-amber-50 rounded-3xl p-8 md:p-12 shadow-lg">
-            <h2 className="text-3xl font-oswald md:text-4xl font-bold text-[#3e1827] mb-4">What You Get (The Value)</h2>
-            <p className="text-[#3e1827] font-oswald text-base md:text-lg leading-relaxed">
-              {/* More visibility, better leads, and stronger returns — Google Ads that finally make financial sense. */}
-                            {service.serviceCards[4].description}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <ServicesSection />
-      <Tesiminiols />
-      <StepsSection />
-      <FaqSection />
-      <ContactSection />
-      <FooterSection />
-      
-    </main>
-    </>
-  )
- }
-  
->>>>>>> 9d240d0a254a780458e0f1fb615a35f51f32de72
 export default function MainServicePage() {
   return (
     <Suspense fallback={<div className="text-center py-10 text-lg">Loading...</div>}>
